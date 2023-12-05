@@ -1,0 +1,86 @@
+/* styling.css */
+
+/* Banner Style */
+.top-banner {
+    background-color: darkgrey; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: left;   
+}
+
+/* Logo Style */
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align logo vertically */
+    margin-right: 15px; /* Margin to the right of the logo */
+}
+
+/* Adjust the sidebar top margin */
+.sidebar {
+    margin-top: 70px; /* Adjust this value based on the actual height of your banner */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+.info-card {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.info-card.members { background-color: #17a2b8; }
+.info-card.overdue { background-color: #dc3545; }   
+.info-card.transactions { background-color: #28a745; }
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-fluid {
+    padding: 0 50px;
+}
+@media (max-width: 768px) {
+    .info-card {
+        margin-bottom: 20px;
+    }
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+
+.main-content {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+
+}

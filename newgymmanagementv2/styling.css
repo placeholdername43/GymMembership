@@ -1,0 +1,252 @@
+
+/* Logo Style */
+.logo {
+    height: 50px; 
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    min-width: 250px; 
+    height: 100vh; 
+    overflow-y: auto; 
+    background-color: #292929;
+    padding-top: 20px;
+    position: fixed;
+}
+
+
+
+#sidebar {
+    min-height: 100vh; 
+    background-color: #292929; 
+    color: white;
+    display: block; 
+    color: white; 
+    font-size: 25px; 
+}
+
+#sidebar .nav-link {
+    color: white;
+}
+
+#sidebar .nav-link.active {
+    background-color: #31332d;
+    color: white;
+}
+
+/* Adjust the main content padding to not hide behind the fixed navbar */
+main {
+    padding-top: 56px; 
+}
+
+
+
+/* Style the content */
+.content {
+    margin-left: 250px;
+    padding: 1px 16px; 
+    height: 1000px; 
+}
+
+
+html .navbar {
+    background-color: #292929!important; 
+}
+
+.custom-font {
+    font-family: 'Paytone One', sans-serif; 
+    color: #ded654 !important;
+}
+
+html .navbar-brand {
+    color: #ded654 !important; 
+    font-family: 'PaytoneOne-Regular', sans-serif; 
+    font-weight: 400;
+}
+
+
+html .navbar-light .navbar-nav .nav-link {
+    color: #6330b4 !important; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.stats-card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center;
+  }
+  
+  .stats-icon {
+    flex-shrink: 0;
+    margin-right: 50px;
+  }
+  
+  .stats-content {
+    text-align: center;
+    flex-grow: 1; 
+  }
+  
+  .stats-number {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0.25em; 
+    position: relative;
+    right:10%;
+  }
+  
+  .stats-category {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(182, 177, 177);
+    position: relative;
+    top: 10%;
+    right: -10%;
+  }
+@media (max-width: 1200px) {
+    .stats-number {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 0.25em; 
+        position: relative;
+        right:15%;
+      }
+      
+      .stats-category {
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(182, 177, 177);
+        position: relative;
+        top: 10%;
+        right: -2%;
+      }
+
+}
+
+
+@media (max-width: 991px) {
+    #sidebar {
+        display: none;
+    }
+    .main {
+        margin-left: 0; 
+    }
+    #sidebar {
+        position: fixed; 
+        top: 56px; 
+        left: -250px;
+        width: 250px; 
+        height: calc(100% - 56px);
+        background-color: #343a40; 
+        overflow-y: auto;
+        display: block; 
+        z-index: 1050;
+    }
+    #sidebar.show {
+        left: 0; 
+    }
+    .main {
+        margin-left: 0; 
+    }
+    .stats-number {
+        font-size: 40px; 
+        font-weight: bold;
+        margin-bottom: 0.25em; 
+        position: relative;
+        left: -50%;
+
+      }
+      
+      .stats-category {
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(182, 177, 177);
+        position: relative;
+        top: 10%;
+        left: -70%;
+      }
+
+}
+
+@media(max-width:775px){
+    .stats-number {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 0.25em;
+        position: relative;
+        left: -10%;
+
+      }
+      
+      .stats-category {
+        font-size: 17px; 
+        font-weight: bold;
+        color: rgb(182, 177, 177);
+        position: relative;
+        top: 10%;
+        left: 0%;
+      }
+
+}
+
+
+@media (min-width: 992px) {
+    .main {
+        margin-left: 250px; 
+    }
+}
+
+.sidebar {
+    z-index: 2000;
+    overflow-y: auto; 
+}
+
+
+body {
+    padding-top: 76px; 
+}
+
+.content {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+
+#sidebar {
+    transition: all 0.2s; 
+
+}
+
+body {
+    padding-top: 70px; 
+}
+
+  @media (max-width: 768px) {
+    .stats-card {
+      flex-direction: column;
+    }
+  
+    .stats-icon {
+      flex-basis: auto;
+    }
+  
+    .stats-info {
+      flex-basis: auto;
+    }
+  }
+
+    .info-card {
+        margin-bottom: 20px;
+    }
+    .container-fluid {
+        padding: 0 15px;
+    }
